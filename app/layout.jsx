@@ -1,8 +1,8 @@
 import './globals.css';
 import React from 'react';
-import { Kanit } from 'next/font/google';
+// import { Kanit } from 'next/font/google';
 
-const kanit = Kanit({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700', '800', '900'] });
+// const kanit = Kanit({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700', '800', '900'] });
 
 export const metadata = {
   title: 'Gaychashop เว็บเติมเกม ไอดีเกม และอื่นๆอีกมากมาย',
@@ -12,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={kanit.className}>
+      <head>
+        <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+      </head>
+
+      <body>
         <>
           <div className="z-50 relative">
             <div className="navbar bg-base-100">
